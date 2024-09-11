@@ -1,0 +1,30 @@
+h1,h2,h3,h4,h5,h6{
+    color:blueviolet;
+    font-family: Monotype Corsiva;
+}
+
+.list-1{
+    color: red;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18pt;
+}
+
+.list-2{
+    color: yellow;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20pt;
+}
+
+.list-3{
+    color: green;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 22pt;
+}
+
+thead th{
+    color: #a7a7a7;
+}
+
+tbody td{
+    color: #737373;
+}
