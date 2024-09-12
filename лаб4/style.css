@@ -1,0 +1,90 @@
+.wrapper{
+    display: flex;
+    padding: 10px 0 10px 10px;
+}
+
+.wrapper div{
+    margin: 10px;
+    flex-grow: 1;
+    text-align: center;
+    padding: 10px;
+    font-size: 70px;
+}
+
+.R{
+    border-top: 10px solid rgb(252, 0, 2);
+    border-left: 10px solid rgb(252, 0, 2);
+    border-right: 10px solid rgb(170, 0, 0);
+    border-bottom: 10px solid rgb(170, 0, 0);
+}
+
+.G{
+    border: 10px dashed rgb(2, 254, 0);
+}
+
+.B{
+    border: 10px dotted rgb(0, 1, 253);
+}
+
+.C{
+    border: 10px double rgb(0, 254, 253);
+}
+
+.M{
+    border: 10px groove rgb(253, 0, 252);
+}
+
+.Y{
+    border: 10px inset  rgb(253, 255, 0);
+}
+
+.K{
+    border: 10px solid rgb(0,0,0)
+}
+
+span{
+    display: inline-block;
+    padding: 5px;
+    margin: 5px;
+    background: #FFA500;
+    border: 3px solid #ff4500;
+}
+
+p:nth-of-type(1){
+    width: 400px;
+    text-align: center;
+    border: 2px solid #ff7f50;
+}
+
+p:nth-of-type(2){
+    border: 5px solid red;
+    border-radius: 20px/40px;
+    box-shadow: inset 2px 2px 8px 8px rgba(0, 0, 0, 0.5);
+    overflow: auto;
+}
+
+p:nth-of-type(3){
+    border: 2px solid #ff6347;
+}
+
+
+.wrapper2{
+    display: flex;
+}
+
+.first{
+    margin-right: 20px;
+    box-sizing: border-box;
+    border: 3px solid black;
+    text-align: center;
+    height: 55px;
+    width: 55px;
+}
+
+.second{
+    text-align: center;
+    box-sizing: content-box;
+    border: 3px solid black;
+    height: 50px;
+    width: 50px;
+}

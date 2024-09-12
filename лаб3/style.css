@@ -1,0 +1,101 @@
+@font-face{
+    font-family: 'Exo2';
+    src: url('fonts/exotwo/Exo2-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: 'Caveat';
+    src: url('fonts/caveat/static/Caveat-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: 'Caveat';
+    src: url('fonts/caveat/static/Caveat-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+}
+
+@font-face{
+    font-family: 'Comfortaa';
+    src: url('fonts/comfortaa/Comfortaa-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: 'Comfortaa';
+    src: url('fonts/comfortaa/Comfortaa-SemiBold.woff2') format('woff2');
+    font-weight: 600;
+}
+
+h1 {
+    font-family: Caveat;
+    text-align: center;
+    margin-bottom: 0;
+    font-weight: 600;
+    font-size: 45px;
+    text-shadow: 2px 3px 5px #706d6d;
+}
+
+h2 {
+    font-family: Exo2;
+    margin-bottom: 1.2em;
+    margin-bottom: 0.2rem;
+    text-indent: 25px;
+}
+
+p{
+    font-family: Comfortaa;
+    text-indent: 25px;
+    text-align: justify;
+    line-height: 200%;
+    font-size: 20px;
+}
+
+p:first-of-type {
+    margin: 0;
+}
+
+p:nth-of-type(2) {
+    margin-top: 0;
+}
+
+p::first-letter {
+    font-weight: 600;
+    font-size: 45px;
+    color: #fff;
+    background-color:hsla(275, 100%, 10%, 1);
+
+}
+
+.last {
+    margin-bottom: 0;
+}
+
+ol{
+    margin-top: 0;
+}
+li{
+    font-size: 20px;
+    font-family: Comfortaa;
+
+}
+
+li::marker{
+    color: blue;
+}
+
+.last-p{
+    text-indent: 25px;
+    font-size: 20px;
+    font-family: Comfortaa;
+}
+
+
+
+.last-p::first-line {
+    color: red;
+}
