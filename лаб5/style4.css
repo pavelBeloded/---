@@ -1,0 +1,97 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 100px auto;
+}
+
+.wrapper {
+    
+    display: flex;
+}
+
+
+
+.number{
+    height: 50px;
+    width: 20px;
+    background: #b6b5b5;
+
+    display: flex;
+}
+
+.numbers.right div{
+    border-top: 1px solid #000;
+    border-right: 1px solid #000;
+    
+}
+
+
+.numbers.left div{
+    border-top: 1px solid #000;
+    border-left: 1px solid #000;
+    
+}
+
+.number:last-child{
+    border-bottom: 1px solid #000;
+}
+
+.number span {
+    margin: auto;
+}
+
+.board{
+    border-spacing: none;
+    border-collapse: collapse;
+    border: 1px solid #000;
+    
+}
+
+.board td{
+    
+    width: 50px;
+    height: 50px;
+   
+}
+
+.board tr:nth-child(odd) > td:nth-child(even) {
+    background: #000;
+}
+
+.board tr:nth-child(even) > td:nth-child(odd) {
+    background: #000;
+}
+
+.letters {
+    display: flex;
+}
+
+.letter {
+    width: 50px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+
+    background: #b6b5b5;
+}
+
+.letters.top div{
+    border-top: 1px solid #000;
+    border-left: 1px solid #000;
+}
+
+.letters.bottom div{
+    border-bottom: 1px solid #000;
+    border-left: 1px solid #000;
+}
+
+.letter:last-child{
+    border-right: 1px solid #000;
+}

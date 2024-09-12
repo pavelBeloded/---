@@ -1,0 +1,42 @@
+table{
+    empty-cells: hide;
+    color: #fff;
+    border-collapse: collapse;
+    
+}
+
+caption{
+    font-size: 1.2em;
+    text-align: center;
+}
+th,td{
+    border: 2px solid #4d5048;
+    padding: 2px;
+    text-align: center;
+}
+
+.places{
+    color: black;
+}
+
+.vendor{
+    background: #00bffe;
+}
+
+.share {
+    background: #81007f;
+}
+
+.growth {
+    background: #008001;
+}
+
+th:empty,td:empty{
+    border: 0;
+    background: transparent;
+}
+
+thead th{
+    background: #01008a;
+}
+

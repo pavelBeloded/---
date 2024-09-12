@@ -1,0 +1,42 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+table, td{
+ border: 1px solid #000;
+}
+
+td{
+    text-align: center;
+}
+
+.date{
+    background: #e9e9e9;
+}
+
+.date span {
+    display: block;
+    transform: rotate(-90deg);
+}
+
+.hour{
+    padding: 10px;
+}
+
+.discipline{
+    padding: 10px;
+}
+
+.empty{
+    padding: 5px;
+}
+
+.first-tr{
+    background: #bcbcbc;
+}
