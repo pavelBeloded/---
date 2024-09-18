@@ -46,8 +46,8 @@ p:nth-of-type(8){
 
 
 p:nth-of-type(9){
-    border-right: 2px ridge #b5a642;
-    border-top: 2px ridge #b5a642;
+    border-right: 3px ridge #b5a642;
+    border-top: 3px ridge #b5a642;
 }
 
 p:nth-of-type(10){
