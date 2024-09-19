@@ -1,0 +1,28 @@
+
+body {
+    background-image: url('./fotos/sticker-FIT.png');
+    background-repeat: no-repeat;
+    background-size: 64px;
+    background-attachment: fixed;
+}
+
+ul li {
+    list-style-image: url("./fotos/home.png");
+
+}
+
+.wrapper {
+    width: 300px;
+}
+
+p {
+    text-indent: 5px;
+}
+
+.first {
+    float: left;
+}
+
+.second {
+    float: right;
+}

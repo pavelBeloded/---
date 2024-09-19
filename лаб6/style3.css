@@ -1,0 +1,38 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 50px;
+
+}
+
+.wrapper div {
+    width: 150px;
+    height: 150px;
+    border: 1px solid #000;
+}
+
+.a {
+    background-image: linear-gradient(blue, red);
+}
+
+.b {
+    background: repeating-linear-gradient(45deg, red 0 5%, blue 5% 10%);
+}
+
+.c {
+    background: radial-gradient(yellow, green);
+}
+
+.d {
+    background: repeating-radial-gradient(yellow 0 10%, green 10% 20%);
+}
+
+.e {
+    background: radial-gradient(yellow, green, transparent), linear-gradient(blue, magenta);
+}
