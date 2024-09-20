@@ -21,8 +21,10 @@ p {
 
 .first {
     float: left;
+    width: 200px;
 }
 
 .second {
     float: right;
+    width: 200px;
 }

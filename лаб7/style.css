@@ -1,0 +1,470 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    margin: 100px 0;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.container.buttons {
+    height: 150px;
+}
+
+.scale {
+    transition: 0.5s;
+}
+
+.scale:hover {
+    transform: scale(0.5);
+}
+
+.rotate {
+    transition: 0.5s;
+}
+
+.rotate:hover {
+    transform: rotate(45deg);
+}
+
+.translate {
+    transition: 0.5s;
+}
+
+.translate:hover {
+    transform: translateX(50px);
+}
+
+.skew {
+    transition: 0.5s;
+}
+
+.skew:hover {
+    transform: skew(-20deg);
+}
+
+button {
+    background: #fff;
+    padding: 10px 15px;
+    border: 1px solid #000;
+    transition: 0.25s;
+    width: 10%;
+    height: 50px;
+}
+
+
+
+.black:hover {
+    background: #000;
+    color: #fff;
+}
+
+.yellow-red:hover {
+    border: 4px solid red;
+    box-shadow: 0px 0px 0px 4px yellow;
+}
+
+.green:hover {
+    border: 4px solid green;
+    border-left: 0;
+    border-right: 0;
+}
+
+.blue:hover {
+    border: 4px solid blue;
+    border-bottom: 0;
+    border-top: 0;
+}
+
+.gradient:hover {
+    background: radial-gradient(yellow 3%, pink 20%, magenta 35%, cyan);
+}
+
+
+.persp2 {
+    perspective: 10px;
+}
+
+.persp2 img {
+    transform: rotateY(1deg);
+}
+
+.persp1, .persp3 {
+    perspective: 300px;
+    /* perspective-origin: bottom; */
+}
+
+.persp1 img, .persp3 img {
+    transform: rotateX(17deg);
+
+}
+
+.persp4 {
+    perspective: 10px;
+}
+
+.persp4 img {
+    transform: rotateY(-1deg);
+}
+
+
+@keyframes block1 {
+    0% {
+        transform: rotateY(0deg);
+        margin-right: 10px;
+    }
+
+    50% {
+        transform: rotateY(0deg);
+
+    }
+
+    100% {
+        margin-right: 10px;
+
+    }
+}
+
+@keyframes block2 {
+    0% {
+        transform: rotateY(0deg);
+        margin-right: 10px;
+        filter: blur(10px)
+    }
+
+    50% {
+        transform: rotateY(0deg);
+
+    }
+
+    100% {
+
+        margin-right: 10px;
+
+    }
+}
+
+@keyframes block3 {
+    0% {
+        transform: rotateY(0deg);
+        margin-right: 10px;
+        filter: grayscale(1);
+    }
+
+    50% {
+        transform: rotateY(0deg);
+
+    }
+
+    100% {
+        margin-right: 10px;
+
+    }
+}
+
+@keyframes block4 {
+    0% {
+        transform: rotateY(0deg);
+        margin-right: 10px;
+        filter: invert(1);
+    }
+
+    50% {
+        transform: rotateY(0deg);
+
+    }
+
+    100% {
+        margin-right: 10px;
+
+    }
+}
+
+.animWrapper {
+    display: flex;
+    perspective: 500px;
+    min-height: 300px;
+}
+
+
+.animWrapper div {
+    display: flex;
+    width: 200px;
+    height: 200px;
+    border: 1px solid #000; 
+    background: #fff;
+}
+
+.animWrapper div span {
+    writing-mode: vertical-lr;
+}
+
+.block1 {
+    z-index: 1;
+    transform: translateX(100%) rotateY(20deg);
+    animation: block1 3s linear infinite alternate-reverse;
+
+}
+
+.block2 {
+    z-index: 2;
+    transform: translateX(12%) rotateY(20deg);
+    animation: block2 3s linear infinite alternate-reverse;
+
+}
+
+.block3 {
+    z-index: 3;
+    transform: translateX(-77%) rotateY(20deg);
+    background: yellow !important;
+    animation: block3 3s linear infinite alternate-reverse;
+
+}
+
+.block4 {
+    z-index: 4;
+    transform: translateX(-166%) rotateY(20deg);
+    animation: block4 3s linear infinite alternate-reverse;
+
+}
+
+
+.wrapper {
+    margin: auto;
+    width: 500px;
+    height: 500px;
+    display: flex;
+    overflow: hidden;
+    margin-bottom: 100px;
+}
+
+.img {
+    width: 100%;
+    height: 100%;
+    animation: images 20s linear infinite;
+    border-top: 5px solid #68ad69;
+  }
+
+@keyframes images {
+    0% {
+        transform: translateX(0%);
+    }
+
+    20% {
+        transform: translateX(-100%);
+    }
+
+    40% {
+        transform: translateX(-200%);
+    }
+
+    60% {
+        transform: translateX(-300%);
+    }
+
+    80% {
+        transform: translateX(-400%);
+    }
+    100% {
+        transform: translateX(-500%);
+    }
+}
+
+.container.image {
+    display: block;
+    width: 500px;
+    margin: auto;
+}
+
+.container.image img {
+     display: block;
+     margin-bottom: 50px;
+} 
+
+.img1 {
+    animation: img1 3s linear infinite;
+}
+
+.img2 {
+    animation: img2 3s linear infinite alternate;
+}
+
+.img3{
+    animation: img3 3s linear infinite;
+}
+
+.img4 {
+    animation: img4 1s linear infinite alternate;
+}
+.img5 {
+    animation: img5 4s linear infinite;
+    position: relative;
+}
+
+@keyframes img1 {
+    0% {
+        transform: translateX(-100px);
+    }
+
+    25% {
+        transform: translateX(0px);
+    }
+    
+
+    50% {
+        transform: translateX(100px);
+    }
+
+    
+    75% {
+        transform: translateX(0px);
+    }
+
+    100% {
+        transform: translateX(-100px);
+    }
+}
+
+@keyframes img2 {
+    0% {
+        border-radius: 0px;
+        transform: translateX(-800px);
+
+    }
+
+    25% {
+        transform: translateX(-400px);
+        border-radius: 12.5%
+    }
+    
+
+    50% {
+        transform: translateX(0px);
+        border-radius: 25%
+    }
+
+    
+    75% {
+        transform: translateX(400px);
+        border-radius: 37.5%
+        
+    }
+
+    100% {
+        transform: translateX(700px);
+        border-radius: 50%;
+
+    }
+}
+
+
+@keyframes img3 {
+    0% {
+        transform: translateX(-800px);
+
+    }
+
+    25% {
+        transform: translateX(-400px);
+    }
+    
+
+    50% {
+        transform: translateX(0px);
+    }
+
+    
+    75% {
+        transform: translateX(400px);
+        
+    }
+
+    100% {
+        transform: translateX(1000px);
+
+    }
+}
+
+
+@keyframes img4 {
+    0% {
+        transform: translateY(-50px);
+    }
+    
+
+    50% {
+        transform: translateY(0px);
+    }
+
+
+    100% {
+        transform: translateY(50px);
+    }
+}
+
+
+@keyframes img5 {
+    0%{
+        top: 0;
+        left: 0;
+    }
+
+    25%{
+        top: 100px;
+        left: 0;
+    }
+
+    50% {
+        top: 100px;
+        left: 100px;
+    }
+
+    75%{
+        top: 0;
+        left: 100px;
+    }
+
+    100% {
+        top: 0;
+        left: 0;
+    }
+}
+
+
+.text {
+    overflow: hidden;
+    width: 300px;
+    height: 300px;
+    margin-bottom: 150px;
+    border: 1px solid #000;
+    transition: 5s;
+}
+
+.text:hover {
+    color: white;
+}
+
+h1 {
+    text-align: center;
+    color: #7bde30;
+    animation: title 3s linear infinite alternate;
+}
+
+@keyframes title {
+    0%{
+        opacity: 0%;
+    }
+
+    100% {
+        opacity: 80%;
+    }
+}
