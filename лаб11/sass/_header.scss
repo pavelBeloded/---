@@ -1,0 +1,29 @@
+.page-header {
+    display: flex;
+    padding: 13px 40px;
+
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+
+    &_logo_img {
+        font-weight: 600;
+    }
+
+    ul{
+        display: flex;
+        list-style-type: none;
+
+        li {
+            margin-right: 36px;
+            &:last-of-type {
+                margin-right: 0;
+            }
+            a {
+                text-decoration: none;
+                
+            }
+        }
+
+    }
+}

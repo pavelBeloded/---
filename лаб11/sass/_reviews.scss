@@ -1,0 +1,51 @@
+.rightpart {
+    width: 30%;
+}
+
+.form {
+    
+    width: 100%;
+    height: 40%;
+
+    &-title{
+        margin-bottom: 10px;
+    }
+
+    &_holder{
+        background: $secondarybg;
+        height: 80%;
+        width: 100%;
+        border-radius: 12px;   
+    }
+}
+
+.reviews {
+    &_title {
+        margin-bottom: 10px;
+    }
+
+    &_block {
+
+
+        &_review {  
+            display: flex;
+            align-items: center;
+            margin-bottom: 30px;
+        }
+    }
+}
+
+.review_photo {
+    width: 30%;
+
+    img{
+        width: 100%;
+        height: auto;
+    }
+}
+
+.review_text {
+    text-align: center;
+    width: 100%;
+
+}

@@ -1,0 +1,31 @@
+.leftpart {
+    width: 70%;
+}
+
+.main {
+    
+    margin-bottom: 88px;
+
+    &_title{
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+
+    &_content {
+        display: flex;
+        justify-content: space-between;
+
+        &_block{
+           
+            border: 1px solid $primarycolor;
+            display: flex;
+            border-radius: 12px;
+            width: 300px;
+            height: 300px;
+            p {
+                margin: auto;
+               
+            }
+        }
+    }
+}

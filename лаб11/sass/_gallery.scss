@@ -1,0 +1,18 @@
+.gallery {
+    &_title{
+        margin-bottom: 20px;
+    }
+
+    &_photos {
+        display: flex;
+        justify-content: space-between;
+        gap: 12px;
+        &_photo {
+            flex-grow: 1;
+            img {
+                width: 100%;
+                height: auto;
+            }
+        }
+    }
+}
