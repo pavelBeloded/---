@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="big.css" rel="stylesheet" media="(max-width: 1280px)">
+    <title>Document</title>
+    <style>
+
+        @import url(medium.css) (max-width: 768px);
+
+        @media (max-width: 480px) {
+            figcaption{
+                color:red;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="section">
+
+        <header class="header">
+            <h1 class="header-title">Заголовок</h1>
+        </header>
+        <div class="cells">
+            <div class="cell">
+                <video src="./9968971-uhd_3840_2160_25fps.mp4" controls></video>
+                <video src="./12321064_1920_1080_25fps.mp4" controls></video>
+                <video src="./13299023-sd_960_540_30fps.mp4" controls></video>
+            </div>
+            <div class="cell">
+                <p>
+                    Почему Flexbox?
+                    Долгое время единственными надёжными инструментами CSS вёрстки были такие способы как Float (обтекание) и позиционирование.
+                    
+                    С их помощью сложно или невозможно достичь следующих простых требований к макету:
+                    
+                    Вертикального выравнивания блока внутри родителя.
+                    Оформления всех детей контейнера так, чтобы они распределили между собой доступную ширину/высоту, независимо от того, сколько ширины/высоты доступно.
+                    Сделать все колонки в макете одинаковой высоты, даже если наполнение в них различно.
+                    Как вы увидите в последующих разделах, flexbox значительно облегчает работу с макетами. Погружаемся!
+                    
+                </p>
+            </div>
+            <div class="cell">
+                <audio src="AC-DC - Back In Black.mp3" controls></audio>
+                <audio src="AC-DC - Thunderstruck.mp3" controls></audio>
+                <audio src="AC-DC - Highway To Hell.mp3" controls></audio>
+            </div>
+        </div>
+    </div>
+    <section class="imgSection">
+        <figure><img src="./anm2990.jpg" alt=""><figcaption>kon</figcaption></figure>
+        <figure><img src="./anm2990.jpg" alt=""><figcaption>kon</figcaption></figure>
+        <figure><img src="./anm2990.jpg" alt=""><figcaption>kon</figcaption></figure>
+        <figure><img src="./anm2990.jpg" alt=""><figcaption>kon</figcaption></figure>
+        <figure><img src="./anm2990.jpg" alt=""><figcaption>kon</figcaption></figure>
+        <figure><img src="./anm2990.jpg" alt=""><figcaption>kon</figcaption></figure>
+        <figure><img src="./anm2990.jpg" alt=""><figcaption>kon</figcaption></figure>
+        <figure><img src="./anm2990.jpg" alt=""><figcaption>kon</figcaption></figure>
+    </section>
+</body>
+</html>

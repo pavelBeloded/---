@@ -1,0 +1,11 @@
+.logo {
+    width: 64px;
+    height: auto;
+}
+
+.nav-links {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 100px;
+}

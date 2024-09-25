@@ -1,0 +1,34 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.grid-wrapper {
+    display: grid;
+    grid-template-areas: 
+    ". . . . ."
+    ". . . gif1 gif1"
+    "gif2 gif2 . gif1 gif1"
+    "gif2 gif2 . . ."
+    ;
+    
+}
+
+.image {
+    width: 20vw;
+    height: 25vh;
+}
+
+.gif.n1 {
+    grid-area: gif1;
+    /* grid-column: span 2;
+    grid-row: span 2; */
+}
+.gif.n2 {
+    grid-area: gif2;
+}
+
+.gify {
+    height: 50vh;
+}

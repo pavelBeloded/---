@@ -1,0 +1,46 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+.grid-wrapper {
+    display: grid;
+    grid-template-columns: 45% 45% 10%;
+    grid-template-rows: 50vh 50vh;
+    grid-template-areas: 
+        "info html heading"
+        "info css heading"
+    ;
+}
+
+.grid-wrapper div {
+   border: 2px solid #000;
+}
+
+.grid-wrapper div:not(.heading) {
+    background: #d2d2d2;
+ }
+
+.heading {
+    writing-mode: vertical-lr;
+    text-align: center;
+    padding: 100px 40%;
+    font-size: 30px;
+
+
+    grid-area: heading;
+}
+
+.info {
+    grid-area: info;
+}
+
+.html {
+    grid-area: html;
+}
+
+.css {
+    grid-area: css;
+}

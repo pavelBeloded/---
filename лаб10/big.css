@@ -1,0 +1,23 @@
+figcaption {
+    color: green;
+    font-size: 20px;
+    text-align: center;
+}
+
+.imgSection {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-grow: 1;
+}
+
+figure {
+    width: 100%;
+    height: auto;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
