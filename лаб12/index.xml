@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet 
+type="text/css" 
+href="forXML.css"?>
+<catalog>
+    <products>
+        <prod>
+            <title>
+                <brand>Apple</brand>    
+                <model>Iphone 16 Pro Max 1TB</model>
+            </title>
+            <articul>3292892</articul>
+            <price>9000BYN</price>
+            <desc>Apple iOS, экран 6.9" OLED (1320x2868) 120 Гц, Apple A18 Pro, ОЗУ 8 ГБ, память 1 ТБ, камера 48 Мп, аккумулятор 4685 мАч (eSIM), влагозащита IP68</desc>
+        </prod>
+        <prod>
+            <title>
+                <brand>Honor</brand>
+                <model>MagicBook X</model>
+            </title>
+            <articul>213132131</articul>
+            <price>2500BYN</price>
+            <desc>16.0" 1920 x 1200, IPS, 60 Гц, Intel Core i5 12450H, 16 ГБ LPDDR4X, SSD 512 ГБ, видеокарта встроенная, Windows 11 Home, цвет крышки темно-серый, аккумулятор 60 Вт·ч</desc>
+        </prod>
+        <prod>
+            <title>
+            <brand>Xiaomi</brand>
+            <model>Robot Vacuum S20+</model>
+            </title>
+            <articul>2342112</articul>
+            <price>1120BYN</price>
+            <desc>влажная уборка, Mi Home, мощность 55 Вт, сила всасывания 6000 Па, пылесборник 0.45 л, с турбощеткой (разборная), навигация: контактный бампер, лидар, датчики перепада высоты, лазерные датчики препятствий, план нескольких этажей</desc>
+        </prod>
+        <prod>
+            <title>
+                <brand>Huawei</brand>
+                <model>Watch Fit 3</model>
+            </title>
+            <articul>1234566</articul>
+            <price>329BYN</price>
+            <desc>синхронизация с Android/iOS, экран AMOLED 1.82", поддержка SIM-карты: нет, пульсометр, измерение кислорода в крови, AOD, GPS, Bluetooth 5.2, корпус: металл (алюминий), ремешок: силикон</desc>
+        </prod>
+        <prod>
+            <title>
+                <brand>Marshall</brand>
+                <model>Major V</model>
+            </title>
+            <articul>7654321</articul>
+            <price>600BYN</price>
+            <desc>беспроводные наушники с микрофоном, накладные, портативные, съёмный аудиокабель, Bluetooth 5.3, 20-20000 Гц, складное оголовье, быстрая зарядка, время работы 100 ч
+Владелец торговой марки</desc>
+        </prod>
+    </products>
+</catalog>
