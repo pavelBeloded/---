@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <svg  xmlns="http://www.w3.org/2000/svg"  ver-
+sion="1.1" width="1000" height="300"> 
+
+        <defs>
+
+            <linearGradient id="polyGrad" gradienttransform="rotate(90)">
+                <stop offset="30%" stop-color="green">
+                    <animate attributeName="stop-color" values="green; yellow; green" dur="5s" repeatCount="indefinite"></animate>
+
+                </stop>
+                <stop offset="80%" stop-color="rgb(255, 90, 15)">
+                    <animate attributeName="stop-color" values="rgb(255, 90, 15); yellow; rgb(255, 90, 15)" dur="5s" repeatCount="indefinite"></animate>
+
+                </stop>
+            </linearGradient>
+
+        </defs>
+        <circle cx="100" cy="100" r="80" fill="blue" stroke="blue" stroke-width="5">
+            <animate attributeName="stroke"  values="blue; red"  dur="2s" begin="mouseover"></animate>
+        </circle>
+        <rect x="200" y="20" width="160" height="160" fill="red" stroke="black" stroke-width="2" stroke-dasharray="640"  stroke-dashoffset="0">
+            <animate attributeName="stroke-dashoffset" values="640; 0" dur="8s" repeatCount="1"></animate>
+        </rect>
+        <ellipse cx="510" cy="100" rx="130" ry="80" fill="green" >
+            <animate attributeName="fill" values="green;red;green" dur="2s" begin="click"></animate>
+        </ellipse>
+        <polygon points="780 20 860 180 700 180" fill="url(#polyGrad)">
+        </polygon>
+        <polyline points="100 200 400 200 330 280 800 280" fill="none" stroke-width="3" stroke="blue"/>
+    </svg>
+
+
+    
+</body>
+</html>

@@ -1,0 +1,24 @@
+* {
+    box-sizing: border-box;
+}
+
+
+.wrapper1 {
+    display: flex;
+}
+
+.photo {
+    display: flex;
+    width: 20%;
+    height: auto;
+
+}
+
+section {
+    height: 500px;
+}
+
+
+p {
+    display: none
+}

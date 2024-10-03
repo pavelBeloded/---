@@ -2,9 +2,21 @@
     width: 70%;
 }
 
+@function p-size($h1size) {
+    @if $h1size > 25px {
+        @return 16px;
+    } @else {
+        @return 0.6*$h1size
+    }
+}
+
 .main {
-    
+    $h1size: 30px;
     margin-bottom: 88px;
+
+    p {
+        font-size: p-size($h1size);
+    }
 
     &_title{
         font-size: 30px;
@@ -29,3 +41,4 @@
         }
     }
 }
+
