@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="attestation.xsl"?>
+<Attestation>
+    <Student id="1">
+        <Name>Иван Иванов</Name>
+        <Courses>
+            <Course>
+                <Title>Математика</Title>
+                <Grade>9</Grade>
+            </Course>
+            <Course>
+                <Title>Физика</Title>
+                <Grade>7</Grade>
+            </Course>
+        </Courses>
+    </Student>
+    <Student id="2">
+        <Name>Мария Петрова</Name>
+        <Courses>
+            <Course>
+                <Title>Математика</Title>
+                <Grade>8</Grade>
+            </Course>
+            <Course>
+                <Title>Физика</Title>
+                <Grade>10</Grade>
+            </Course>
+        </Courses>
+    </Student>
+    <Student id="3">
+        <Name>Алексей Сидоров</Name>
+        <Courses>
+            <Course>
+                <Title>Математика</Title>
+                <Grade>3</Grade>
+            </Course>
+            <Course>
+                <Title>Физика</Title>
+                <Grade>6</Grade>
+            </Course>
+        </Courses>
+    </Student>
+</Attestation>
