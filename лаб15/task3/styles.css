@@ -1,0 +1,337 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-size: 16px;
+    color: #000;
+    font-family: "Roboto", sans-serif;
+    background: #fff0c7;
+}
+
+p {
+    color: #858080;
+    font-weight: 300;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.pop_up {
+    position: fixed;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 1;
+    z-index: 10;
+    width: 300px;
+    transition: all 0.25s ease-in;
+}
+
+.pop_up.closed {
+    opacity: 0;
+    z-index: -1;
+    top: -100px;
+    transform: scale(0.5);
+}
+
+.container.mail.closed {
+    animation: form 0.2s linear forwards;
+}
+
+@keyframes form {
+    
+    0%{
+        display: flex;
+        opacity: 1;
+        transform: scale(1);
+
+    }
+
+
+    99% {
+        opacity:  0;
+        transform: scale(0.1);
+
+    }
+
+    100% {
+        display: none;
+        transform: scale(0.1);
+        opacity:  0;
+    }
+}
+
+
+.pop_up_inner {
+    background: #3e3e3e;
+    box-shadow: 1px 1px 7px #acaaaa;
+
+    border: 2px solid #232323;
+    border-radius: 5px;
+    padding: 20px 20px;
+    
+}
+
+.pop_up_text {
+    text-align: center;
+}
+
+.pop_up_text p {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+
+
+.container{
+    display: flex;
+    justify-content: center;
+}
+
+.mailCreating {
+    width: 400px;
+    background: #fff;
+    margin-top: 50px;
+    padding: 30px;
+    border: 1px solid #e5dcdc;
+    border-radius: 10px;
+}
+
+
+
+.mail-title p{
+    color: #000;
+    font-size: 25px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.login {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+
+
+.name-surname input {
+    border: 1px solid #c6c0c0;
+    border-radius: 5px;
+    padding: 10px 5px;
+
+    outline: none;
+    width: 96%;
+}
+
+.birthday, .studyInf {
+    margin-bottom: 20px;
+}
+
+.birthday_date, .studyInf_items {
+    display: flex;
+}
+
+.birthday_date select, .studyInf_items select {
+    padding: 10px 5px;
+}
+
+.birthday_date select:first-child, .studyInf_items select:first-child {
+    color: #858080;
+}
+
+.birthday_date select option, .studyInf_items select option {
+    color: #000;
+}
+
+.day select, .month select, .year select {
+    border: 1px solid #c6c0c0;
+    width: 100%;
+    border-left: 0;
+}
+
+.day select:focus, .month select:focus, .year select:focus {
+    outline: none;
+}
+
+.day select {
+    border-left: 1px solid #c6c0c0;;
+}
+
+.day select {
+    border-radius: 5px 0 0 5px;
+}
+
+.year select {
+    border-radius: 0 5px 5px 0;
+}
+.month {
+   width: 50%;;
+}
+.day, .year{
+    width: 25%;
+}
+
+
+.sex {
+    margin-bottom: 20px;
+}
+
+.sex-select{
+    display: flex;
+    
+}
+
+.sex-select > div{
+    margin-right: 20px;
+}
+
+.sex-select input{
+    margin-right: 5px;
+    transform: scale(1.2);
+}
+
+
+.create-mail-name {
+    margin-bottom: 20px;
+}
+
+.mail-name {
+    display: flex;
+    align-items: center;
+}
+
+
+.mail-user-name, .mail-domen {
+    border: 1px solid #c6c0c0;
+    overflow: hidden;
+
+}
+
+.mail-domen {
+    border-radius: 0 5px 5px 0;
+    border-left: none;
+}
+
+
+.mail-user-name {
+    flex-grow: 1;
+    border-radius: 5px 0 0 5px;
+}
+
+#mail-user-name, #domen {
+    width: 100%;
+    height: 36px;
+    
+    padding: 5px 5px;
+
+    border: 0;
+    
+    outline: none;
+
+    appearance: none;
+}
+
+
+
+.password {
+    width: 100%;
+    display: flex;
+    position: relative;
+
+    margin-bottom: 10px;
+}
+
+.password input {
+    width: 100%;
+    padding: 10px 5px;
+    border: 1px solid #e5dcdc;
+    border-radius: 5px;
+    outline: none;
+
+}
+
+.password-img {
+    position: absolute;
+    height: 20px;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+
+
+
+
+.create-button button{
+    margin-top: 50px;
+    width: 100%;
+    background: rgb(66, 50, 35);
+    border: 0;
+    border-radius: 5px;
+    color: #fff;
+    padding: 10px;
+}
+
+
+
+.gallery {
+    height: 500px;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 100px;
+}
+
+.gallery_item {
+    width: 333px;
+    flex-grow: 0;
+}
+
+.gallery img {
+    display: block;
+    height: 100%;
+    width: auto;
+}
+
+.gallery_photo.border {
+    border: 10px solid rgb(66, 50, 35);
+}
+
+.description {
+    display: none;
+    word-break: normal;
+}
+
+
+.gallery_photo.hidden{
+    display: none;
+}
+
+.footer {
+    margin-top: 200px;
+    min-height: 200px;
+    border-top: 1px solid #ababab;
+    background: rgb(66, 50, 35);
+    color: #fff0c7;
+
+    display: flex;
+    align-items: center;
+}
+
+.footer ul {
+    margin-left: 15%;
+    list-style: none;
+}
+
+.footer ul li {
+    margin-top: 5px;
+}
+
+.footer ul li:nth-of-type(even) {
+    font-weight: 300;
+}
+
+.hidden{
+    display: none;
+}

@@ -1,30 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <script defer src="script.js"></script>
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="wrapper1">
-        <div class="photo">
-            <img src="./1.png" alt="">
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum, nesciunt?</p>
-        </div>
-        <div class="photo">
-            <img src="./3.png" alt="">
-        </div>
-        <div class="photo">
-            <img src="./2.png" alt="">
-        </div>
+      <div class="photo">
+        <img src="./1.png" alt="" />
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum,
+          nesciunt?
+        </p>
+      </div>
+      <div class="photo">
+        <img src="./3.png" alt="" />
+      </div>
+      <div class="photo">
+        <img src="./2.png" alt="" />
+      </div>
     </div>
 
     <section>
+      <form action="">
+        <div class="regForm">
+          <div class="formTitle">
+            <h1>Регистрация постоянного клиента</h1>
+          </div>
 
-        <form action="">
+          <div class="formContent">
+            <div class="formRow">
+              <div class="formRowText">
+                <label for="surname">Фамилия:</label>
+              </div>
 
+              <div class="formRowInput">
+                <input type="text" id="surname" />
+              </div>
+            </div>
+
+            <div class="formRow">
+              <div class="formRowText">
+                <label for="name">Имя:</label>
+              </div>
+
+              <div class="formRowInput">
+                <input type="text" id="name" />
+              </div>
+            </div>
+
+            <div class="formRow">
+              <div class="formRowText">
+                <label for="patronymic">Отчество:</label>
+              </div>
+
+              <div class="formRowInput">
+                <input type="text" id="patronymic" />
+              </div>
+            </div>
+
+            <div class="formRow">
+              <div class="formRowText">
+                <label for="age">Ваш возраст:</label>
+              </div>
+
+              <div class="formRowInput">
+                <input type="text" id="age" />
+              </div>
+            </div>
+
+            <div class="formRow">
+              <div class="formRowText">
+                <label>Пол:</label>
+              </div>
+
+              <div class="formRowInput" id="sexForm">
+                <input type="radio" name="sex" id="sexM" />
+                <label for="sexM">мужской</label>
+
+                <input type="radio" name="sex" id="sexF" />
+                <label for="sexF">женский</label>
+              </div>
+            </div>
+
+            <div class="formRow">
+              <div class="formRowText">
+                <label for="email">Email:</label>
+              </div>
+
+              <div class="formRowInput">
+                <input type="email" id="email" />
+              </div>
+            </div>
+
+           
+
+            
+
+          <div class="formButtons">
+            <button>Регистрация</button>
+            <button>Отмена</button>
+          </div>
+        </div>
+      </form>
+
+      <!-- <form action="">
+
+
+            
             <select name="fac" id="fac" required> 
                 <option value="ФИТ">ФИТ</option>
                 <option value="ТОВ">ТОВ</option>
@@ -54,17 +140,14 @@
 
             <button id="but" type="submit">Записать</button>
 
-        </form>
-
+        </form> -->
     </section>
     <footer>
-
-        <ul>
-            <li></li>
-            <li></li>
-            <li></li>
-        </ul>
-
+      <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
     </footer>
-</body>
+  </body>
 </html>

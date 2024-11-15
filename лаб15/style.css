@@ -1,17 +1,101 @@
-* {
+*{
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
+
+body{
+    color: #fff;
+}
+
+.regForm{
+    background: indigo;
+    padding: 15px 20px;
+    width: 30%;
+    margin: 100px auto;
+}
+
+.formTitle{
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+.formRow{
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.formRowText{
+    text-align: left;
+    width: 40%;
+}
+
+.formRowInput{
+    width: 59%;
+}
+
+#date, #from{
+    width: 65%;
+}
+
+.formRowInput input:not(#date, #sexF, #sexM){
+background: rgba(255, 255, 255, .5);
+color: #000; 
+box-shadow: inset 0 0 10px rgba(255, 255, 255, .75);
+font-size: 1.2em;
+border: 0;
+border-radius: 2px;
+color: rgba(255, 255, 255, 1)
+}
+
+.formRowInput input:not(#date, #sexF, #sexM):focus{
+    color: #000;
+    background: #fff;
+
+    
+}
+
+.formRowInput input:not(#date) {
+    width: 100%;
+}
+
+
+#sexForm input{
+    width: auto !important;
+}
+
+.formButtons {
+    text-align: right;
+}
+
+.formButtons button {
+    background: navy;
+    box-shadow: 0 0 4px white;
+    color: #fff;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 2px;
+    
+}
+
 
 
 .wrapper1 {
     display: flex;
+    justify-content: space-evenly;
 }
 
 .photo {
     display: flex;
-    width: 20%;
     height: auto;
+    width: 20%;
+    
+}
 
+.photo img {
+    height: 100px;
+    width: auto;
 }
 
 section {
